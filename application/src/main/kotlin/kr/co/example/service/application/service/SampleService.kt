@@ -86,7 +86,7 @@ class SampleService(
    * 생성 후 즉시 조회될 수 있도록 캐시를 미리 넣어둡니다.
    */
   @Caching(
-    cachePut = [
+    put = [
       CachePut(
         cacheNames = [SAMPLE_CACHE],
         key = "#result.id",

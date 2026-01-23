@@ -1,6 +1,8 @@
 package kr.co.example.service.adapter.cache
 
 import com.github.benmanes.caffeine.cache.Caffeine
+import org.springframework.boot.context.properties.ConfigurationProperties
+import org.springframework.boot.context.properties.bind.ConstructorBinding
 import org.springframework.cache.CacheManager
 import org.springframework.cache.annotation.EnableCaching
 import org.springframework.cache.caffeine.CaffeineCacheManager
@@ -17,7 +19,9 @@ import java.util.concurrent.TimeUnit
  */
 @Configuration
 @EnableCaching
-class CacheConfig {
+class CacheConfig(
+  private val cacheProperties: CacheProperties
+) {
 
   companion object {
     /**
@@ -49,7 +53,7 @@ class CacheConfig {
     val cacheManager = CaffeineCacheManager()
 
     // 캐시 이름 등록
-    cacheManager.setCacheNames(SAMPLE_CACHE)
+    cacheManager.setCacheNames(cacheProperties.names)
 
     // Caffeine 설정: TTL과 최대 크기 지정
     cacheManager.setCaffeine(
@@ -71,7 +75,7 @@ class CacheConfig {
   fun customCaffeineCacheManager(): CacheManager {
     val cacheManager = CaffeineCacheManager()
 
-    cacheManager.setCacheNames(SAMPLE_CACHE)
+    cacheManager.setCacheNames(cacheProperties.names)
 
     // 캐시별 설정을 위한 CaffeineSpec
     // 예: "samples" 캐시는 5분 TTL, 최대 500개
@@ -85,3 +89,8 @@ class CacheConfig {
     return cacheManager
   }
 }
+
+@ConfigurationProperties(prefix = "app.cache")
+data class CacheProperties(
+  val names: List<String> = emptyList()
+)
