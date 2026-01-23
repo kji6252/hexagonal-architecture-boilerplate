@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: cache-adapter-test
+  data:
+    redis:
+      timeout: 5s
+      client-type: jedis
+
+app:
+  cache:
+    names:
+      - samples
+    localCaches:
+      samples: maximumSize=1000, expireAfterWrite=60s, recordStats
+    redisCaches:
+      samples: 30m
+
+logging:
+  level:
+    kr.co.example.service.adapter.cache: DEBUG

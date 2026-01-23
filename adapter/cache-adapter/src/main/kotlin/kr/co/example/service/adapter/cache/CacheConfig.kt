@@ -3,6 +3,9 @@ package kr.co.example.service.adapter.cache
 import com.fasterxml.jackson.databind.ObjectMapper
 import com.fasterxml.jackson.databind.jsontype.BasicPolymorphicTypeValidator
 import com.github.benmanes.caffeine.cache.Caffeine
+import org.springframework.boot.autoconfigure.condition.ConditionalOnBean
+import org.springframework.boot.autoconfigure.condition.ConditionalOnClass
+import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty
 import org.springframework.boot.context.properties.EnableConfigurationProperties
 import org.springframework.cache.annotation.EnableCaching
 import org.springframework.cache.caffeine.CaffeineCacheManager
@@ -41,6 +44,9 @@ class CacheConfig(
   }
 
   @Bean
+  @ConditionalOnClass(RedisConnectionFactory::class)
+  @ConditionalOnBean(RedisConnectionFactory::class)
+  @ConditionalOnProperty(name = ["app.cache.enabled"], havingValue = "true", matchIfMissing = true)
   fun bucket4jJedisPool(jedisConnectionFactory: JedisConnectionFactory): JedisPool {
     val poolConfig = jedisConnectionFactory.getPoolConfig<Jedis>()?.apply {
       jmxEnabled = false
@@ -52,6 +58,9 @@ class CacheConfig(
   }
 
   @Bean
+  @ConditionalOnClass(RedisConnectionFactory::class)
+  @ConditionalOnBean(RedisConnectionFactory::class, ObjectMapper::class)
+  @ConditionalOnProperty(name = ["app.cache.enabled"], havingValue = "true", matchIfMissing = true)
   fun redisCacheManager(connectionFactory: RedisConnectionFactory, objectMapper: ObjectMapper): RedisCacheManager {
 
     val defaultCacheConfig = defaultCacheConfig()
@@ -72,6 +81,9 @@ class CacheConfig(
   }
 
   @Bean
+  @ConditionalOnClass(RedisConnectionFactory::class)
+  @ConditionalOnBean(RedisConnectionFactory::class)
+  @ConditionalOnProperty(name = ["app.cache.enabled"], havingValue = "true", matchIfMissing = true)
   fun redisCacheManagerForAuth(connectionFactory: RedisConnectionFactory): RedisCacheManager {
 
     val defaultCacheConfig = defaultCacheConfig()
@@ -111,6 +123,9 @@ class CacheConfig(
   }
 
   @Bean
+  @ConditionalOnClass(RedisConnectionFactory::class)
+  @ConditionalOnBean(RedisConnectionFactory::class)
+  @ConditionalOnProperty(name = ["app.cache.enabled"], havingValue = "true", matchIfMissing = true)
   fun stringRedisTemplate(connectionFactory: RedisConnectionFactory): StringRedisTemplate {
     return StringRedisTemplate(connectionFactory)
   }
