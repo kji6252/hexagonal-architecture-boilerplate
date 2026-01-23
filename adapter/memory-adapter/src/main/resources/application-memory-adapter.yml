@@ -1,0 +1,42 @@
+spring:
+  data:
+    redis:
+      timeout: 5s
+      client-type: jedis
+---
+spring:
+  config.activate.on-profile: local
+  data:
+    redis:
+      host: ${REDIS_NODES_HOST}
+      port: ${REDIS_NODES_PORT}
+---
+spring:
+  config.activate.on-profile: dev
+  data:
+    redis:
+      cluster:
+        nodes: ${REDIS_NODES_HOST}:${REDIS_NODES_PORT}
+        max-redirects: 5
+      ssl:
+        enabled: true
+---
+spring:
+  config.activate.on-profile: stg
+  data:
+    redis:
+      cluster:
+        nodes: ${REDIS_NODES_HOST}:${REDIS_NODES_PORT}
+        max-redirects: 5
+      ssl:
+        enabled: true
+---
+spring:
+  config.activate.on-profile: prod
+  data:
+    redis:
+      cluster:
+        nodes: ${REDIS_NODES_HOST}:${REDIS_NODES_PORT}
+        max-redirects: 5
+      ssl:
+        enabled: true

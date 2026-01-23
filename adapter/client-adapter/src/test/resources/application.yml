@@ -1,0 +1,22 @@
+spring:
+  data:
+    redis:
+      timeout: 5s
+      client-type: jedis
+      host: ${127.0.0.1}
+      port: ${6379}
+app:
+  cache:
+    localCaches:
+      10m: maximumSize=100000, expireAfterWrite=10m, recordStats
+      enum-age-types: maximumSize=2, expireAfterWrite=10m, recordStats
+      enum-service-cd: maximumSize=2, expireAfterWrite=10m, recordStats
+    redisCaches:
+      30m: 30m
+      user-info-cache: 10m
+      getOauth2: 1m
+
+logging:
+  level:
+    org.springframework.cache: DEBUG
+    org.springframework.data.redis.cache: DEBUG

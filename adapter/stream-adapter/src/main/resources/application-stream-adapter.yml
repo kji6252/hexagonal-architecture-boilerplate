@@ -1,0 +1,57 @@
+spring.cloud:
+  function:
+    definition: dmsUserTermsConsumer
+  stream:
+    binders:
+      kafka:
+        type: kafka
+        environment:
+          spring:
+            cloud:
+              stream:
+                kafka:
+                  binder:
+                    brokers: ${KAFKA_URL:}
+                    auto-create-topics: false
+            kafka:
+              properties:
+                security.protocol: SASL_SSL
+                sasl.mechanism: SCRAM-SHA-512
+                sasl.jaas.config: >
+                  org.apache.kafka.common.security.scram.ScramLoginModule required
+                  username="${KAFKA_SCRAM_USERNAME}"
+                  password="${KAFKA_SCRAM_PASSWORD}";
+    bindings:
+      dmsUserTermsConsumer-in-0:
+        consumer:
+          useNativeDecoding: false
+        group: ixio-member-service
+        destination: TB_USER_TERMS
+    kafka:
+      bindings:
+        dmsUserTermsConsumer-in-0:
+          consumer:
+            ackMode: MANUAL
+            startOffset: earliest
+            configuration:
+              key.deserializer: org.apache.kafka.common.serialization.StringDeserializer
+              value.deserializer: org.apache.kafka.common.serialization.StringDeserializer
+
+---
+spring:
+  config.activate.on-profile: local
+  cloud.stream.binders.kafka.environment.spring.cloud.stream.kafka.binder.brokers: localhost:9092
+  cloud.stream.binders.kafka.environment.spring.cloud.stream.kafka.binder.auto-create-topics: true
+
+
+---
+spring:
+  config.activate.on-profile: dev
+
+---
+spring:
+  config.activate.on-profile: stg
+
+---
+spring:
+  config.activate.on-profile: prod

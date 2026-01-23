@@ -1,0 +1,100 @@
+openapi: 3.0.3
+info:
+  title: Hexagonal Architecture Boilerplate
+  description: 헥사고날 아키텍처 보일러플레이트 API
+  version: 1.0.0
+servers:
+  - url: http://localhost:8080
+    description: local
+
+tags:
+  - name: Sample
+    description: 샘플 API
+
+paths:
+  /api/v1/sample/hello:
+    get:
+      tags:
+        - Sample
+      summary: Hello World 메시지 반환
+      description: 이름 파라미터를 받아 Hello World 메시지를 반환합니다.
+      operationId: sayHello
+      parameters:
+        - name: name
+          in: query
+          description: 이름
+          required: false
+          schema:
+            type: string
+            default: World
+      responses:
+        "200":
+          description: 성공
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HelloResponse'
+
+  /api/v1/sample/{id}:
+    get:
+      tags:
+        - Sample
+      summary: 샘플 데이터 조회
+      description: ID로 샘플 데이터를 조회합니다.
+      operationId: getSample
+      parameters:
+        - name: id
+          in: path
+          description: 샘플 ID
+          required: true
+          schema:
+            type: integer
+            format: int64
+      responses:
+        "200":
+          description: 성공
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SampleResponse'
+        "404":
+          description: 찾을 수 없음
+
+components:
+  schemas:
+    HelloResponse:
+      type: object
+      properties:
+        code:
+          type: string
+          example: "SUCCESS_0001"
+        message:
+          type: string
+          example: "요청이 성공적으로 처리되었습니다."
+        data:
+          type: string
+          example: "Hello, World!"
+
+    SampleResponse:
+      type: object
+      properties:
+        code:
+          type: string
+          example: "SUCCESS_0001"
+        message:
+          type: string
+          example: "요청이 성공적으로 처리되었습니다."
+        data:
+          type: object
+          properties:
+            id:
+              type: integer
+              format: int64
+              example: 1
+            message:
+              type: string
+              example: "Hello, World!"
+            createdAt:
+              type: string
+              format: date-time
+              example: "2025-01-23T00:00:00"

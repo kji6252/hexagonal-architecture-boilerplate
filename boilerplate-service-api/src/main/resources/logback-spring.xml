@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration scan="true" scanPeriod="60 seconds">
+  <springProperty scope="context" name="LOG_LEVEL" source="logging.level.root"/>
+
+  <property name="LOG_PATTERN" value="%-5level %d{yy-MM-dd HH:mm:ss}[%thread] [%logger{0}:%line] - %msg%n"/>
+
+  <!-- local profile인 경우 설정한 패턴으로 로깅 -->
+  <springProfile name="local">
+    <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+      <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+        <pattern>${LOG_PATTERN}</pattern>
+      </encoder>
+    </appender>
+  </springProfile>
+
+  <!-- local profile이 아닌 경우 json 포맷으로 로깅. 데이터독이 수집하기 위한 목적. -->
+  <springProfile name="!local">
+    <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+      <encoder class="net.logstash.logback.encoder.LogstashEncoder">
+        <includeMdc>true</includeMdc>
+        <jsonGeneratorDecorator class="net.logstash.logback.mask.MaskingJsonGeneratorDecorator">
+          <valueMasker class="kr.co.uplus.core.SensitiveMaskingPatternLayout"/>
+        </jsonGeneratorDecorator>
+      </encoder>
+    </appender>
+  </springProfile>
+
+
+  <springProfile name="local,dev">
+    <root level="debug">
+      <appender-ref ref="CONSOLE"/>
+    </root>
+  </springProfile>
+
+  <springProfile name="prod,stg">
+    <root level="info">
+      <appender-ref ref="CONSOLE"/>
+    </root>
+  </springProfile>
+
+  <logger name="org.apache.kafka" level="info"/>
+  <logger name="org.springframework.kafka" level="info"/>
+  <root level="${LOG_LEVEL}">
+    <appender-ref ref="CONSOLE"/>
+  </root>
+</configuration>

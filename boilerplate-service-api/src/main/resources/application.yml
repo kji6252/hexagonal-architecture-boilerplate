@@ -1,0 +1,121 @@
+spring:
+  application:
+    name: boilerplate-service
+  testcontainers:
+    dynamic-property-registry-injection: ALLOW
+  jackson:
+    default-property-inclusion: non_null
+    deserialization:
+      FAIL_ON_UNKNOWN_PROPERTIES: false
+  profiles:
+    group:
+      local: fake
+    include:
+      - core
+      - web-adapter
+      - persistence-adapter
+    active: local
+
+management:
+  prometheus:
+    metrics:
+      export:
+        enabled: true
+  metrics:
+    tags:
+      service: ${spring.application.name}
+      env: ${spring.profiles.active}
+  endpoints:
+    web:
+      exposure:
+        include:
+          - "info"
+          - "health"
+  health:
+    db:
+      enabled: false
+    redis:
+      enabled: false
+  endpoint:
+    health:
+      probes:
+        enabled: true
+
+#서버 종료시
+server.shutdown: graceful
+spring.lifecycle.timeout-per-shutdown-phase: 60s
+
+logging:
+  level:
+    root: info
+    kr.co.upls: debug
+
+terms:
+  category:
+    promotion: 6
+---
+spring:
+  config.activate.on-profile: local
+  web:
+    resources:
+      static-locations: classpath:/docs,classpath:/static/
+  testcontainers:
+    dynamic-property-registry-injection: ALLOW
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    configprops:
+      show-values: ALWAYS
+    health:
+      probes:
+        enabled: true
+
+logging:
+  level:
+    root: debug
+    org.apache.kafka: ERROR
+    kafka: info
+    com.zaxxer.hikari.pool: info
+    software.amazon: info
+    io.awspring.cloud.sqs: info
+    io.netty.handler.logging: info
+    org.apache.http: info
+    org.apache.zookeeper: info
+    org.testcontainers: INFO
+    com.github.dockerjava: INFO
+    tc: INFO
+    com.github.dockerjava.zerodep.shaded.org.apache.hc.client5.http.wire: OFF
+
+---
+spring:
+  config.activate.on-profile: dev
+  web:
+    resources:
+      static-locations: classpath:/docs,classpath:/static/
+
+
+---
+spring:
+  config.activate.on-profile: stg
+  web:
+    resources:
+      static-locations: classpath:/docs
+
+
+---
+spring:
+  config.activate.on-profile: prod
+
+logging:
+  level:
+    root: INFO
+
+management:
+  prometheus:
+    metrics:
+      export:
+        enabled: false

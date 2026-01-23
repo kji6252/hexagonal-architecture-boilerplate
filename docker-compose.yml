@@ -1,0 +1,37 @@
+version: '3.8'
+
+services:
+  controller:
+    image: ngrinder/controller:3.5.8
+    container_name: ngrinder-controller
+    platform: linux/amd64
+    ports:
+      - "18080:80"
+      - "16001:16001"
+      - "12000-12009:12000-12009"
+    environment:
+      - TZ=Asia/Seoul
+    volumes:
+      - ngrinder-controller:/opt/ngrinder-controller
+      - ./:/opt/ngrinder-controller/script
+    networks:
+      - ngrinder-net
+
+  agent:
+    image: ngrinder/agent:3.5.8
+    container_name: ngrinder-agent
+    platform: linux/amd64
+    depends_on:
+      - controller
+    environment:
+      - CONTROLLER_IP=controller
+      - TZ=Asia/Seoul
+    networks:
+      - ngrinder-net
+
+volumes:
+  ngrinder-controller:
+
+networks:
+  ngrinder-net:
+    driver: bridge

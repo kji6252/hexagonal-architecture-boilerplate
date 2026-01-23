@@ -1,0 +1,136 @@
+spring:
+  cloud:
+    openfeign:
+      circuitbreaker:
+        enabled: true
+      client:
+        config:
+          default:
+            connectTimeout: 10_000
+            readTimeout: 10_000
+            loggerLevel: BASIC
+          u-plus-id-auth:
+            url: ${U_PLUS_ID_BASE_URL:}
+            readTimeout: 10_000
+          apim:
+            readTimeout: 15_000
+            url: ${APIM_BASE_URL:https://tst-openapi.lguplus.co.kr/uplus}
+            defaultRequestHeaders:
+              X-IBM-CLIENT-ID: ${APIM_X_IBM_CLIENT_ID:76d43779dad24a1943edab1991224c02}
+              X-IBM-CLIENT-SECRET: ${APIM_X_IBM_CLIENT_SECRET:b9129a8c1f226b00ac1f67f8f22e9db3}
+          apim-o-auth:
+            readTimeout: 10_000
+            url: ${APIM_BASE_URL:https://tst-openapi.lguplus.co.kr/uplus}
+          ex-apim:
+            url: ${EX_APIM_BASE_URL:https://api.lguplus.co.kr/uplus/intuser}
+            defaultRequestHeaders:
+              X-IBM-CLIENT-ID: ${EX_APIM_CLIENT_ID:}
+              X-IBM-CLIENT-SECRET: ${EX_APIM_CLIENT_SECRET:}
+          ex-apim-o-auth:
+            url: ${EX_APIM_BASE_URL:https://api.lguplus.co.kr/uplus/intuser}
+          ixio-call-service:
+            url: ${IXIO_CALL_SERVICE_BASE_URL:http://agent-ixiocall-service-svc-active.agent.svc.cluster.local}
+            readTimeout: 15_000
+            default-request-headers:
+              Authorization: basic aXhpb19kZXY6aXhpb3Bhc3MxIQ==
+          proxy:
+            readTimeout: 16_000
+            url: ${PROXY_BASE_URL:https://proxy-orchestratord.aicall-lgudev.com}
+          ex-puf-kms:
+            readTimeout: 10_000
+            url: ${PUF_KMS_BASE_URL:}
+      httpclient:
+        max-connections: 1000
+
+resilience4j:
+  timelimiter:
+    configs:
+      default:
+        timeoutDuration: 10s
+    instances:
+      FeignApimClientpostMobileVasStringApimVasChangeableRequest:
+        timeoutDuration: 15s
+      FeignApimClientputMobileVasStringApimVasChangeRequest:
+        timeoutDuration: 15s
+      ApimTokenClientapimAuthorizeJwtMap:
+        timeoutDuration: 10s
+      ExApimClientcustInfoStringStringStringMap:
+        timeoutDuration: 15s
+      UplusIdFeignClientintrospectTokenStringMultiValueMap:
+        timeoutDuration: 15s
+      UplusIdFeignClientrequestTokenMultiValueMap:
+        timeoutDuration: 15s
+      IxioCallClientdeleteCallDataOfString:
+        timeoutDuration: 15s
+      ProxyClientgetDualNumberSettingStringStringStringStringStringStringStringString:
+        timeoutDuration: 15s
+      ExPufKmsClientdeletePufKmsUserStringStringDeletePufKmsUserRequest:
+        timeoutDuration: 15s
+
+uplus.auth:
+  client:
+    client-id: ${UPLUS_AUTH_CLIENT_ID:}
+    client-secret: ${UPLUS_AUTH_CLIENT_SECRET:}
+    client-id-for-corporation: ${UPLUS_AUTH_CLIENT_ID_FOR_CORPORATION:}
+    client-secret-for-corporation: ${UPLUS_AUTH_CLIENT_SECRET_FOR_CORPORATION:}
+    secret: ${AUTH_ADMIN_SECRET:}
+    scope: openid profile email phone uplus.id user_type
+    scope-for-corporation: module.execute
+    callback-url: com.lguplus.aicallagent://callback #https://member-serviced.aicall-lgudev.com/callback
+    add: GROOT
+    basic-base64-id-secret: ${UPLUS_AUTH_BASIC_BASE64_ID_SECRET:}
+    ex-client-id: ${EX_APIM_CLIENT_ID:}
+    ex-client-secret: ${EX_APIM_CLIENT_SECRET:}
+
+apim:
+  grant-type: ${APIM_GRANT_TYPE:client_credentials}
+
+proxy:
+  mobile-manager-decryption-key: ${PROXY_MOBILE_MANAGER_DECRYPTION_KEY:}
+
+puf-kms:
+  hmac-secret-key: ${PUF_KMS_HMAC_SECRET_KEY:}
+
+---
+spring:
+  config.activate.on-profile: local
+uplus.auth:
+  client:
+    server-url: https://user-serviced.aicall-lgudev.com
+
+---
+spring:
+  config.activate.on-profile: dev
+uplus.auth:
+  client:
+    server-url: https://user-serviced.aicall-lgudev.com
+
+---
+spring:
+  config.activate.on-profile: stg
+  cloud:
+    openfeign:
+      client:
+        config:
+          ixio-call-service:
+            default-request-headers:
+              Authorization: basic ${INTERNAL_IXIO_CALL_SERVICE_TOKEN:}
+
+uplus.auth:
+  client:
+    server-url: https://user-services.aicall-lgudev.com
+
+---
+spring:
+  config.activate.on-profile: prod
+  cloud:
+    openfeign:
+      client:
+        config:
+          ixio-call-service:
+            default-request-headers:
+              Authorization: basic ${INTERNAL_IXIO_CALL_SERVICE_TOKEN:}
+
+uplus.auth:
+  client:
+    server-url: https://user-service.aicall-lgu.com

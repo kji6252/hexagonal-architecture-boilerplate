@@ -1,0 +1,32 @@
+app:
+  s3:
+    call-history-backup-bucket: ${AWS_S3_CALL_HISTORY_BACKUP_BUCKET:}
+    local-endpoint: ${AWS_S3_ENDPOINT:}
+    presigned-url-expiration-minutes: 15
+    region: ap-northeast-2
+
+---
+spring:
+  config.activate.on-profile: local
+app:
+  s3:
+    call-history-backup-bucket: test-call-history-backup
+    local-endpoint: http://localhost:4566
+    region: us-east-1
+---
+spring:
+  config.activate.on-profile: dev
+
+# IRSA 인증 사용 (DefaultCredentialsProvider)
+
+---
+spring:
+  config.activate.on-profile: stg
+
+# IRSA 인증 사용 (DefaultCredentialsProvider)
+
+---
+spring:
+  config.activate.on-profile: prod
+
+# IRSA 인증 사용 (DefaultCredentialsProvider)

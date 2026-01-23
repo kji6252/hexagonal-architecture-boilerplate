@@ -1,0 +1,130 @@
+spring:
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: ${U_PLUS_ID_BASE_URL:https://groot-gw.accountd.lguplusdev.com} # https://groot-gw.accountd.lguplusdev.com
+
+test-token:
+  base-uri: ${TEST_TOKEN_BASE_URI:}
+  redirect-uri: ${TEST_TOKEN_REDIRECT_URI:}
+  client-id: ${TEST_TOKEN_CLIENT_ID:}
+  code-challenge: ${TEST_TOKEN_CODE_CHALLENGE:}
+
+bucket4j:
+  enabled: false
+  cache-to-use: redis-jedis
+  filter-config-caching-enabled: true
+  filter-config-cache-name: filterConfigCache
+  filters:
+    - id: filter1
+      cache-name: buckets
+      url: .*
+      rate-limits:
+        - tokens-inheritance-strategy: reset
+          bandwidths:
+            - capacity: 1
+              time: 1
+              unit: minutes
+              refill-speed: interval
+  default-metric-tags:
+    - key: IP
+      expression: "getRemoteAddr()"
+      types:
+        - REJECTED_COUNTER
+        - CONSUMED_COUNTER
+        - PARKED_COUNTER
+        - INTERRUPTED_COUNTER
+        - DELAYED_COUNTER
+
+aca:
+  shared:
+    secret-key: ${ACA_SHARED_SECRET_KEY:}
+
+mvoip:
+  api:
+    secret-key: ${MVOIP_API_SECRET_KEY:}
+
+puf:
+  kms:
+    api:
+      secret-key: ${PUF_KMS_API_SECRET_KEY:}
+
+uplus.auth:
+  web:
+    base-url: ${U_PLUS_ID_BASE_URL:}
+    client-id: ${UPLUS_AUTH_CLIENT_ID:}
+    client-secret: ${UPLUS_AUTH_CLIENT_SECRET:}
+    secret: ${AUTH_ADMIN_SECRET:}
+    scopes: [openid, profile, email, phone, uplus.id, uplus.business, user_type]
+    callback-url: com.lguplus.aicallagent://callback #https://member-serviced.aicall-lgudev.com/callback
+    add: GROOT
+    auth-uri: /oauth2/authorize
+    token-uri: /oauth2/token
+    prompt: select_account
+    web-response-type: code
+    web-login-code-challenge: FBpfGx--y6VTJ79YDYXQNZgivCo7kwploRRdbC-Ydoc
+    web-login-code-verifier: THIS_IS_A_COMPLETE_ENGLISH_SENTENCE_FOR_YOUR_TEST_123
+    web-login-code-challenge-method: S256
+    ctnKey: ${AOS_CTN_KEY_SECRET:}
+    es-server-sign-key: ${ES_SERVER_SIGN_KEY:}
+    es-server-encrypt-key: ${ES_SERVER_ENCRYPT_KEY:}
+
+unlink:
+  callback-types: USER_LEAVE,SERVICE_DISCONNECT
+  auth-project-id: ${UNLINK_AUTH_PROJECT_ID:}
+
+swagger:
+  dev:
+    user: test
+    pwd: "{noop}test"
+
+---
+spring:
+  config.activate.on-profile: local
+
+uplus.auth:
+  web:
+    #POST /auth-code를 web으로 테스트하기 위해서는 U+ID /oauth2/token 호출 시 callback-url(application-client-adapter.yml의 callback-url)을 아래 값과 똑같이 변경해야합니다.
+    web-login-callback-url: https://member-serviced.aicall-lgudev.com/callback
+
+---
+spring:
+  config.activate.on-profile: dev
+
+uplus.auth:
+  web:
+    #POST /auth-code를 web으로 테스트하기 위해서는 U+ID /oauth2/token 호출 시 callback-url(application-client-adapter.yml의 callback-url)을 아래 값과 똑같이 변경해야합니다.
+    web-login-callback-url: https://member-serviced.aicall-lgudev.com/callback
+
+swagger:
+  dev:
+    user: "${SWAGGER_DEV_USER:}"
+    pwd: "${SWAGGER_DEV_PWD:}"
+
+---
+spring:
+  config.activate.on-profile: stg
+
+uplus.auth:
+  web:
+    #POST /auth-code를 web으로 테스트하기 위해서는 U+ID /oauth2/token 호출 시 callback-url(application-client-adapter.yml의 callback-url)을 아래 값과 똑같이 변경해야합니다.
+    web-login-callback-url: https://member-services.aicall-lgudev.com/callback
+
+swagger:
+  dev:
+    user: "${SWAGGER_DEV_USER:}"
+    pwd: "${SWAGGER_DEV_PWD:}"
+
+---
+spring:
+  config.activate.on-profile: prod
+
+uplus.auth:
+  web:
+    web-login-callback-url:
+
+swagger:
+  dev:
+    user: "${SWAGGER_DEV_USER:}"
+    pwd: "${SWAGGER_DEV_PWD:}"

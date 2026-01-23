@@ -1,0 +1,62 @@
+spring:
+  application:
+    name: member-service-batch
+  profiles:
+    include:
+      - core
+      - persistence-adapter
+      - memory-adapter
+    active: local
+  batch:
+    jdbc:
+      initialize-schema: NEVER
+    job:
+      enabled: false
+
+server.shutdown: graceful
+spring.lifecycle.timeout-per-shutdown-phase: 60s
+
+
+---
+spring:
+  config.activate.on-profile: local
+  batch:
+    datasource:
+      driver-class-name: org.h2.Driver
+      url: jdbc:h2:mem:batchmeta;DB_CLOSE_DELAY=-1;MODE=MYSQL
+      username: sa
+      password:
+    flyway:
+      enabled: true
+      locations:
+        - classpath:db/batch_migration
+      baseline-on-migrate: true
+
+logging:
+  level:
+    root: debug
+    org:
+      hibernate:
+        SQL: debug
+        type:
+          descriptor:
+            sql:
+              BasicBinder: TRACE
+---
+spring:
+  config.activate.on-profile: dev
+
+
+
+---
+spring:
+  config.activate.on-profile: stg
+
+
+
+---
+spring:
+  config.activate.on-profile: prod
+logging:
+  level:
+    root: info

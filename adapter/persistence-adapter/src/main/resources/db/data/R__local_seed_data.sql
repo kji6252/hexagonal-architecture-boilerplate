@@ -1,0 +1,335 @@
+/*TB_USER*/
+INSERT INTO
+    TB_USER (USER_ID, ENTR_ID, NAME, EMAIL, GENDER, CTN, BIRTHDATE, VERSION_NUMBER, MODEL_NAME, OS_NAME, DEVICE_TOKEN, ACCESS_TOKEN, IS_MVOIP, SIGNUP_DATE, LAST_CALL_TIME, OS_TYPE)
+VALUES
+    ('fb0bddc4-96c9-428c-93a7-5990ea55b216', 'NTEyNzc1MjE0NTQw', '부한윤  ', 'fb0bdd83339207@temporary.id', 'MALE', '01083339207', '1993-02-06 09:00:00', '00.01.31', 'SM-F731N', '13',
+     'eubKrU-vRhe85FvWb0bGts:APA91bGGOX4PUulGr-yTO2nnIUbarlMOw9ISi1CnEjQOZQtPT7T0KSG0l9hp91n9RINWdS3BKuttt_38DvNBIthgv-GnY-bxWLhonkiDslKtbLxtjPsgUOs',
+     'eyJraWQiOiIyNGE5ZDlhMS0wNzBlLTQ4YTMtODVkYS1mODVkNjNjMDY1NGQiLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiI5ZjNhMzZjYS1hMTYzLTQwYzktYTQ4Ni02OTExNjgxYTZlZjkiLCJhdWQiOiJzdEpLNzMyQlVLTzFVSFFQdXVIaldSNENWRU1Lb2lkcCIsIm5iZiI6MTc1NTU2MzUxMiwic2NvcGUiOlsidXNlcl90eXBlIiwicGhvbmUiLCJvcGVuaWQiLCJwcm9maWxlIiwiZW1haWwiLCJ1cGx1cy5pZCJdLCJpc3MiOiJodHRwczovL2dyb290LWd3LmFjY291bnRkLmxndXBsdXNkZXYuY29tIiwiZXhwIjoxNzU1NjQ5OTEyLCJpYXQiOjE3NTU1NjM1MTJ9.jP834FPDTXqsOUSPrxq59wmw_DzOcU4TKkmlbiNggYPo3wvXHVBNog4BBN1sBuu3SFD3wuQ5Enrb52tNxprxZ0GkPcu0s68QkblvkdmZji-hGoU3b2OTpoxLdSTfNPhRmYasLZkqnRD00M0axEyS1MB7UMKj6WlJ9HapJ9FsqzNwcTOlBLFvi7sonXAqYoDqUBdFlYi1RKOkwmFrbLUfQamFZgAKjVWl7EHUMk5Sr-sy6iT03Gt_azlX5_1LrFbd8mFvgx0r8q9EFYbFjWaJjhZctxnQ-66-x6bff2PC_duwVUklcD2mDaRCF1GDtWCgC-NERQVXuqYmBwGYm0PK5Q',
+     '1', '2025-01-06 17:09:28', '1970-01-01 09:00:01', '2'),
+    ('fb3e9459-61d6-49c9-b1c8-333376f71bc5', 'NTAwMjQ5NzM2NzYx', '구관기', 'leesy1nsg@lguplus.co.kr', 'MALE', '01055213410', '1979-10-24 09:00:00', '00.01.31', 'SM-F741N', '14', 'eBCXRTg_S3KbyjFtRgiUu2:APA91bFCY3B0NHh-yj5OE5QLojvp24-IpayzwN430Rd8Os18yrWcLfyu10EAo48QH8SyggdRqYIoTXOEyY1dosTdZ9Np0tqvC5gyf93MSYZQ2vIpjRi8mQc', 'eyJraWQiOiIyNGE5ZDlhMS0wNzBlLTQ4YTMtODVkYS1mODVkNjNjMDY1NGQiLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJmYjNlOTQ1OS02MWQ2LTQ5YzktYjFjOC0zMzMzNzZmNzFiYzUiLCJhdWQiOiJzdEpLNzMyQlVLTzFVSFFQdXVIaldSNENWRU1Lb2lkcCIsIm5iZiI6MTczOTg1NjEzNywic2NvcGUiOlsidXNlcl90eXBlIiwicGhvbmUiLCJvcGVuaWQiLCJwcm9maWxlIiwiZW1haWwiLCJ1cGx1cy5pZCJdLCJpc3MiOiJodHRwczovL2dyb290LWd3LmFjY291bnRkLmxndXBsdXNkZXYuY29tIiwiZXhwIjoxNzQwMTE1MzM3LCJpYXQiOjE3Mzk4NTYxMzd9.a7H56cI5OnckD6jmdQ00Agqz4VyZfOtHG3FplTfTwQJqSR5z3sfw7PLTPG5rvWp0v8MiZnuGbvaBTvLZ-skKbWh8kILu9Raii3lya69KYJ81EUuJd1rwI4YUR9fihDA3A7ZamqEjLr0IaVeeJos9cIaXTRJYxokhuZM7LxyvxBYpZJs34LVINk3unEFffA2HAN1IQaLcGP_PySsRuYyCYpMm06Y_8GfP2peLVnF45_NtaDSbXVYPDODNMuF3od_T1Id496medhDbaWAO6dxxMgdtpxSnrGzEJmAK0jl7QgEQ_6zSxKYfFQ0_blCDeZIvm1qKeusznTLO1R6HRVqyIA', '1', '2025-01-16 14:06:59', '1970-01-01 09:00:01', '2'),
+    ('fc482ecd-eb6a-468c-9de7-d244d087b008', 'NTE2OTg4OTk0NTE3', '구관팡', 'fc482e83142769@temporary.id', 'MALE', '01083142769', '1997-08-16 09:00:00', '00.01.18', 'SM-F916N', '10', 'dvX0sgC2RcCRaoJB-ws8I1:APA91bHexTmPX1SDCwXLqXGYouT8K9t65lFPiHX9SJR0qCOFI3P7KKkB7uC6hbygKzMrT_f-ZP-42428M2mjXdfXGb54ID6h2MhjY_XuPgMu84RfcD3Eymk', 'eyJraWQiOiIyNGE5ZDlhMS0wNzBlLTQ4YTMtODVkYS1mODVkNjNjMDY1NGQiLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJmYzQ4MmVjZC1lYjZhLTQ2OGMtOWRlNy1kMjQ0ZDA4N2IwMDgiLCJhdWQiOiJzdEpLNzMyQlVLTzFVSFFQdXVIaldSNENWRU1Lb2lkcCIsIm5iZiI6MTc0Mjc4MjI5OCwic2NvcGUiOlsidXNlcl90eXBlIiwicGhvbmUiLCJvcGVuaWQiLCJwcm9maWxlIiwiZW1haWwiLCJ1cGx1cy5pZCJdLCJpc3MiOiJodHRwczovL2dyb290LWd3LmFjY291bnRkLmxndXBsdXNkZXYuY29tIiwiZXhwIjoxNzQyNzg1ODk4LCJpYXQiOjE3NDI3ODIyOTh9.i_cuA6kJZgBsmUf3hMnQSo41Xu-8oMUCjJKlD5PaPa7Wgi1TzT6jRH3aGPGlKe3dvQwAAKHb5Y7XNIhWKTRA1MCVypkaa6w6e_en35MjVxrB9op2u4gCpfX10SjYbagqybTboESDovMv8vdTn3wZiSgrKpr9eg9eDUCLkXrCJifwDU7tsPPRhnjQnYDg9-537exIb9ItjRvIdVq17vxkfX-ogkBjc-fUwsJzZJUHegkNDODUIa2p3ftmtgFtC296GcI_K0lujfOit1aUj8kyTS9LbzyuzhuZqLaMevozeQ6mcxZ7AyGb5U-ZchVrm-k9tfCLcY9Sw0y6_s8Zf37dwA', '1', '2025-01-03 15:07:59', '2025-01-25 13:01:00', '2'),
+    ('7f5aae14-f171-49b9-8735-a5a52c6a0d65', 'ENTR_100013', 'User_100013', 'user_100013@example.com','MALE', '8', '1980-12-08 00:00:00', 'v10', 'Model_47', 'OS_5', 'Token_91074', 'AccessToken_92179', '1', '2025-01-04 10:43:38', '2025-01-04 10:43:38', '1'),
+    ('unique1', 'ENTR_100081', 'User_100081', 'user_100081@example.com','MALE', '9', '1980-11-19 09:00:00', 'v3', 'Model_54', 'OS_8', 'Token_41735', 'AccessToken_45295', '0', '2025-01-04 10:43:38', '2025-01-04 10:43:38', '1'),
+    ('unique2', 'NTEyMzI4MTIzMTYw', '부리진', 'tkehsrv@nate.com','MALE', '99', '1985-11-17 09:00:00', '1.4.0', 'iPhone15,4', '18.1.1', '00B76C5EFD2CE1E5E988E9BBDABDBDACECDC1AB7B1F4190157C0E251E327C06C', 'eyJraWQiOiIyNGE5ZDlhMS0wNzBlLTQ4YTMtODVkYS1mODVkNjNjMDY1NGQiLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiIwMjhjZWU2MS0zMzczLTRmY2QtYjdhOS0xZTNhNTBiMjllZWYiLCJhdWQiOiJzdEpLNzMyQlVLTzFVSFFQdXVIaldSNENWRU1Lb2lkcCIsIm5iZiI6MTc0MTA3NTE4MCwic2NvcGUiOlsidXNlcl90eXBlIiwicGhvbmUiLCJvcGVuaWQiLCJwcm9maWxlIiwiZW1haWwiLCJ1cGx1cy5pZCJdLCJpc3MiOiJodHRwczovL2dyb290LWd3LmFjY291bnRkLmxndXBsdXNkZXYuY29tIiwiZXhwIjoxNzQxMzM0MzgwLCJpYXQiOjE3NDEwNzUxODB9.Qx1hQlPZHfAQc676FXzgbD9KptisYJ22U-Ko4HYNibQ70VWbym7CNhc1brLY-UGFswJgrqlCKhrpajq5B8nv22pH_TgzXyewC9oCflqske7LmTr5ND3nvd0540LFG8TWAwe3P-uk9DQHsiISJUzU9UQSiOGGdZi_Z61HjBsu6aZUA1FUZmGjzd83wFgrzKyfc88gWZSA_GMJ98zMPkSNAdGk8W9TxW9paSW8egTwtgTsbkS1RkwwCcNTmYDIg6UaQNKTYGvpEuh1PHKnX2xlvyaaJPmY4FKIrSIU2xpZtNj7LR5OGyUPE6PhAlHjTCXs9V3-5H-tNkgYuXcSc22a8g', '1', '2025-01-04 10:43:38', '2025-01-04 10:43:38', '1'),
+    ('unique3', 'ENTR_1', 'User_1', 'user_1@example.com','MALE', '999', '1980-01-02 00:00:00', 'v6', 'Model_18', 'OS_4', 'Token_14520', 'AccessToken_37014', '0', '2025-01-04 10:43:38', '2025-01-04 10:43:38', '2'),
+    ('unique4', 'ENTR_100002', 'User_100002', 'user_100002@example.com','MALE', '9999', '1980-05-07 00:00:00', 'v6', 'Model_35', 'OS_8', 'Token_94594', 'AccessToken_75566', '1', '2025-01-04 10:43:38', '2025-01-04 10:43:38', '1'),
+    ('unique5', 'ENTR_100003', 'User_100003', 'user_100003@example.com','MALE', '99999', '1980-04-11 00:00:00', 'v8', 'Model_65', 'OS_0', 'Token_3461', 'AccessToken_13147', '0', '2025-01-04 10:43:38', '2025-01-04 10:43:38', '2'),
+    ('user_10', 'ENTR_10', 'User_10', 'user_10@example.com','MALE', '999', '1980-05-14 00:00:00', 'v9', 'Model_91', 'OS_6', 'Token_76460', 'AccessToken_18894', '1', '1970-01-01 12:00:01', '1970-01-01 12:00:01', '2'),
+    ('user_100', 'ENTR_100', 'User_100', 'user_100@example.com','MALE', '999', '1980-07-07 00:00:00', 'v7', 'Model_15', 'OS_5', 'Token_2688', 'AccessToken_87161', '0', '1970-01-01 12:00:01', '1970-01-01 12:00:01', '2'),
+    ('user_1000', 'ENTR_1000', 'User_1000', 'user_1000@example.com','MALE', '999', '1980-01-27 00:00:00', 'v3', 'Model_69', 'OS_9', 'Token_7636', 'AccessToken_84800', '1', '1970-01-01 12:00:01', '1970-01-01 12:00:01', '2'),
+    ('user_10000', 'ENTR_10000', 'User_10000', 'user_10000@example.com','MALE', '9999', '1980-10-11 09:00:00', 'v7', 'Model_98', 'OS_1', 'Token_87967', 'AccessToken_80957', '0', '1970-01-01 12:00:01', '1970-01-01 12:00:01', '2'),
+    ('user_100000', 'ENTR_100000', 'User_100000', 'user_100000@example.com','MALE', '9999', '1980-12-23 09:00:00', 'v4', 'Model_91', 'OS_9', 'Token_13917', 'AccessToken_49530', '0', '1970-01-01 12:00:01', '1970-01-01 12:00:01', '1'),
+    ('user_100001', 'ENTR_100001', 'User_100001', 'user_100001@example.com','MALE', '9999', '1980-03-25 00:00:00', 'v9', 'Model_62', 'OS_5', 'Token_52192', 'AccessToken_47003', '0', '1970-01-01 12:00:01', '1970-01-01 12:00:01', '2'),
+    ('user_100004', 'ENTR_100004', 'User_100004', 'user_100004@example.com','MALE', '99999', '1980-09-19 00:00:00', 'v2', 'Model_2', 'OS_9', 'Token_31218', 'AccessToken_99463', '1', '1970-01-01 12:00:01', '1970-01-01 12:00:01', '2'),
+    ('user_100005', 'ENTR_100005', 'User_100005', 'user_100005@example.com','MALE', '99999', '1980-07-27 00:00:00', 'v1', 'Model_94', 'OS_9', 'Token_80899', 'AccessToken_21432', '0', '1970-01-01 12:00:01', '1970-01-01 12:00:01', '2'),
+    ('user_100006', 'ENTR_100006', 'User_100006', 'user_100006@example.com','MALE', '99999', '1980-08-19 00:00:00', 'v5', 'Model_46', 'OS_0', 'Token_45977', 'AccessToken_63308', '0', '1970-01-01 12:00:01', '1970-01-01 12:00:01', '1'),
+    ('user_100007', 'ENTR_100007', 'User_100007', 'user_100007@example.com','MALE', '8', '1980-02-24 00:00:00', 'v10', 'Model_95', 'OS_6', 'Token_25294', 'AccessToken_93255', '0', '1970-01-01 12:00:01', '1970-01-01 12:00:01', '2'),
+    ('user_100008', 'ENTR_100008', 'User_100008', 'user_100008@example.com','MALE', '8', '1980-04-26 00:00:00', 'v7', 'Model_39', 'OS_5', 'Token_22972', 'AccessToken_28082', '0', '1970-01-01 12:00:01', '1970-01-01 12:00:01', '1'),
+    ('user_100009', 'ENTR_100009', 'User_100009', 'user_100009@example.com','MALE', '8', '1980-05-06 00:00:00', 'v7', 'Model_77', 'OS_0', 'Token_7763', 'AccessToken_22614', '0', '1970-01-01 12:00:01', '1970-01-01 12:00:01', '1'),
+    ('user_10001', 'ENTR_10001', 'User_10001', 'user_10001@example.com','MALE', '8', '1980-08-05 00:00:00', 'v1', 'Model_35', 'OS_9', 'Token_95151', 'AccessToken_79168', '0', '1970-01-01 12:00:01', '1970-01-01 12:00:01', '2'),
+    ('user_100010', 'ENTR_100010', 'User_100010', 'user_100010@example.com','MALE', '8', '1980-04-04 00:00:00', 'v7', 'Model_92', 'OS_0', 'Token_9170', 'AccessToken_53247', '0', '1970-01-01 12:00:01', '1970-01-01 12:00:01', '2'),
+    ('user_100011', 'ENTR_100011', 'User_100011', 'user_100011@example.com','MALE', '8', '1980-09-20 00:00:00', 'v4', 'Model_95', 'OS_8', 'Token_58981', 'AccessToken_15145', '1', '1970-01-01 12:00:01', '1970-01-01 12:00:01', '2'),
+    ('user_100012', 'ENTR_100012', 'User_100012', 'user_100012@example.com','MALE', '8', '1980-06-21 00:00:00', 'v1', 'Model_76', 'OS_0', 'Token_36511', 'AccessToken_99325', '1', '1970-01-01 12:00:01', '1970-01-01 12:00:01', '2'),
+    ('user_100014', 'ENTR_100014', 'User_100014', 'user_100014@example.com','MALE', '0105595660', '1980-03-22 00:00:00', 'v5', 'Model_75', 'OS_5', 'Token_94511', 'AccessToken_66015', '1', '2025-01-04 10:43:38', '2025-01-04 10:43:38', '1'),
+    ('user_100015', 'ENTR_100015', 'User_100015', 'user_100015@example.com','MALE', '0108189657', '1980-03-27 00:00:00', 'v2', 'Model_25', 'OS_9', 'Token_25667', 'AccessToken_55164', '0', '2025-01-04 10:43:38', '2025-01-04 10:43:38', '1'),
+    ('user_100016', 'ENTR_100016', 'User_100016', 'user_100016@example.com','MALE', '0106909184', '1980-06-28 00:00:00', 'v9', 'Model_70', 'OS_1', 'Token_67284', 'AccessToken_7592', '1', '2025-01-04 10:43:38', '2025-01-04 10:43:38', '1'),
+    ('user_100017', 'ENTR_100017', 'User_100017', 'user_100017@example.com','MALE', '0103642240', '1980-12-22 09:00:00', 'v3', 'Model_10', 'OS_5', 'Token_4883', 'AccessToken_13753', '1', '2025-01-04 10:43:38', '2025-01-04 10:43:38', '2'),
+    ('user_100018', 'ENTR_100018', 'User_100018', 'user_100018@example.com','MALE', '0102573795', '1980-08-08 00:00:00', 'v10', 'Model_1', 'OS_2', 'Token_52281', 'AccessToken_60105', '1', '2025-01-04 10:43:38', '2025-01-04 10:43:38', '2'),
+    ('user_100019', 'ENTR_100019', 'User_100019', 'user_100019@example.com','MALE', '0104764315', '1980-12-25 09:00:00', 'v3', 'Model_63', 'OS_9', 'Token_12796', 'AccessToken_30546', '1', '2025-01-04 10:43:38', '2025-01-04 10:43:38', '1'),
+    ('user_10002', 'ENTR_10002', 'User_10002', 'user_10002@example.com','MALE', '0109934817', '1980-10-08 00:00:00', 'v3', 'Model_12', 'OS_3', 'Token_76779', 'AccessToken_42236', '1', '2025-01-04 10:42:42', '2025-01-04 10:42:42', '1'),
+    ('user_100020', 'ENTR_100020', 'User_100020', 'user_100020@example.com','MALE', '0105501782', '1980-09-20 00:00:00', 'v2', 'Model_86', 'OS_1', 'Token_71870', 'AccessToken_13241', '1', '2025-01-04 10:43:38', '2025-01-04 10:43:38', '1'),
+    ('user_100021', 'ENTR_100021', 'User_100021', 'user_100021@example.com','MALE', '0101097777', '1980-09-25 00:00:00', 'v2', 'Model_54', 'OS_7', 'Token_20738', 'AccessToken_81358', '1', '2025-01-04 10:43:38', '2025-01-04 10:43:38', '1'),
+    ('user_100022', 'ENTR_100022', 'User_100022', 'user_100022@example.com','MALE', '0108400769', '1980-03-26 00:00:00', 'v3', 'Model_83', 'OS_1', 'Token_13318', 'AccessToken_63199', '1', '2025-01-04 10:43:38', '2025-01-04 10:43:38', '1'),
+    ('user_100023', 'ENTR_100023', 'User_100023', 'user_100023@example.com','MALE', '0102446085', '1980-02-04 00:00:00', 'v1', 'Model_19', 'OS_7', 'Token_9151', 'AccessToken_64842', '1', '2025-01-04 10:43:38', '2025-01-04 10:43:38', '2'),
+    ('user_100024', 'ENTR_100024', 'User_100024', 'user_100024@example.com','MALE', '0101229675', '1980-11-12 09:00:00', 'v9', 'Model_19', 'OS_3', 'Token_67567', 'AccessToken_73067', '1', '2025-01-04 10:43:38', '2025-01-04 10:43:38', '1');
+
+-- 공통코드(서비스코드)
+INSERT INTO TB_ENUM_CODE (PECODE, ECODE, EVALUE, ECODE_TITLE, ECODE_ORDER, IS_ACTIVE, CREATED_AT, UPDATED_AT, CREATED_BY, UPDATED_BY) VALUES ('SERVICE_CD','IXIO','IXIO','익시오',1,1,current_time(), current_time(),'admin','admin');
+INSERT INTO TB_ENUM_CODE (PECODE, ECODE, EVALUE, ECODE_TITLE, ECODE_ORDER, IS_ACTIVE, CREATED_AT, UPDATED_AT, CREATED_BY, UPDATED_BY) VALUES ('SERVICE_CD','IXIOLAB','IXIOLAB','익시오실험실',2,1,current_time(), current_time(),'admin','admin');
+
+-- 공통코드(연령타입)
+INSERT INTO TB_ENUM_CODE (PECODE, ECODE, EVALUE, ECODE_TITLE, ECODE_ORDER, IS_ACTIVE, CREATED_AT, UPDATED_AT, CREATED_BY, UPDATED_BY) VALUES ('AGE_TYPE','AGE0','0','전체연령',1,1,current_time(), current_time(),'admin','admin');
+INSERT INTO TB_ENUM_CODE (PECODE, ECODE, EVALUE, ECODE_TITLE, ECODE_ORDER, IS_ACTIVE, CREATED_AT, UPDATED_AT, CREATED_BY, UPDATED_BY) VALUES ('AGE_TYPE','AGE1','14','14세이상',2,1,current_time(), current_time(),'admin','admin');
+INSERT INTO TB_ENUM_CODE (PECODE, ECODE, EVALUE, ECODE_TITLE, ECODE_ORDER, IS_ACTIVE, CREATED_AT, UPDATED_AT, CREATED_BY, UPDATED_BY) VALUES ('AGE_TYPE','AGE2','19','19세이상',3,1,current_time(), current_time(),'admin','admin');
+
+-- 공통코드(부가서비스 코드)
+INSERT INTO TB_ENUM_CODE (PECODE, ECODE, EVALUE, ECODE_TITLE, ECODE_ORDER, IS_ACTIVE, CREATED_AT, UPDATED_AT, CREATED_BY, UPDATED_BY) VALUES ('PROD_CD','AOS_IXIO','LRZ1004147','AOS 익시오 부가서비스 코드',1,1,current_time(), current_time(),'admin','admin');
+INSERT INTO TB_ENUM_CODE (PECODE, ECODE, EVALUE, ECODE_TITLE, ECODE_ORDER, IS_ACTIVE, CREATED_AT, UPDATED_AT, CREATED_BY, UPDATED_BY) VALUES ('PROD_CD','iOS_IXIO','LRZ1002380','iOS 익시오 부가서비스 코드',2,1,current_time(), current_time(),'admin','admin');
+INSERT INTO TB_ENUM_CODE (PECODE, ECODE, EVALUE, ECODE_TITLE, ECODE_ORDER, IS_ACTIVE, CREATED_AT, UPDATED_AT, CREATED_BY, UPDATED_BY) VALUES ('PROD_CD','iOS_MVOIP','LRZ1002380','iOS 익시오 부가서비스 코드',1,1,current_time(), current_time(),'admin','admin');
+INSERT INTO TB_ENUM_CODE (PECODE, ECODE, EVALUE, ECODE_TITLE, ECODE_ORDER, IS_ACTIVE, CREATED_AT, UPDATED_AT, CREATED_BY, UPDATED_BY) VALUES ('PROD_CD','AOS_MVOIP','LRZ1002381','AOS 익시오 부가서비스 코드',2,1,current_time(), current_time(),'admin','admin');
+
+-- 공통코드(pushType 코드)
+INSERT INTO TB_ENUM_CODE (PECODE, ECODE, EVALUE, ECODE_TITLE, ECODE_ORDER, IS_ACTIVE, CREATED_AT, UPDATED_AT, CREATED_BY, UPDATED_BY) VALUES ('PUSH_TYPE','NOTICE','NOTICE','공지',1,1,current_time(), current_time(),'admin','admin');
+INSERT INTO TB_ENUM_CODE (PECODE, ECODE, EVALUE, ECODE_TITLE, ECODE_ORDER, IS_ACTIVE, CREATED_AT, UPDATED_AT, CREATED_BY, UPDATED_BY) VALUES ('PUSH_TYPE','SUMMARY','SUMMARY','요약',2,1,current_time(), current_time(),'admin','admin');
+INSERT INTO TB_ENUM_CODE (PECODE, ECODE, EVALUE, ECODE_TITLE, ECODE_ORDER, IS_ACTIVE, CREATED_AT, UPDATED_AT, CREATED_BY, UPDATED_BY) VALUES ('PUSH_TYPE','PROMOTION','PROMOTION','프로모션',3,1,current_time(), current_time(),'admin','admin');
+
+
+-- 약관 카테고리
+INSERT INTO TB_MEMBER_TERMS_CATEGORY (PARENT_CATEGORY_ID, SERVICE_CODE, ORDER_NO, CATEGORY_TITLE, IS_REQUIRED, MEMO, CREATED_BY, UPDATED_BY) values (0,'IXIO',1,'서비스 이용약관',1,'익시오 필수','Admin','Admin');
+INSERT INTO TB_MEMBER_TERMS_CATEGORY (PARENT_CATEGORY_ID, SERVICE_CODE, ORDER_NO, CATEGORY_TITLE, IS_REQUIRED, MEMO, CREATED_BY, UPDATED_BY) values (0,'IXIO',2,'개인정보 수집·이용 동의',1,'익시오 필수','Admin','Admin');
+INSERT INTO TB_MEMBER_TERMS_CATEGORY (PARENT_CATEGORY_ID, SERVICE_CODE, ORDER_NO, CATEGORY_TITLE, IS_REQUIRED, MEMO, CREATED_BY, UPDATED_BY) values (0,'IXIO',3,'개인정보 제3자 제공 동의',1,'익시오 필수','Admin','Admin');
+INSERT INTO TB_MEMBER_TERMS_CATEGORY (PARENT_CATEGORY_ID, SERVICE_CODE, ORDER_NO, CATEGORY_TITLE, IS_REQUIRED, MEMO, CREATED_BY, UPDATED_BY) values (0,'IXIO',4,'위치기반서비스 이용약관',1,'','Admin','Admin');
+INSERT INTO TB_MEMBER_TERMS_CATEGORY (PARENT_CATEGORY_ID, SERVICE_CODE, ORDER_NO, CATEGORY_TITLE, IS_REQUIRED, MEMO, CREATED_BY, UPDATED_BY) values (0,'IXIO',5,'고객 혜택 제공을 위한 정보수집·이용 동의',0,'푸쉬 및 마케팅 활용을 위한 약관','Admin','Admin');
+INSERT INTO TB_MEMBER_TERMS_CATEGORY (PARENT_CATEGORY_ID, SERVICE_CODE, ORDER_NO, CATEGORY_TITLE, IS_REQUIRED, MEMO, CREATED_BY, UPDATED_BY) values (5,'IXIO',6,'혜택 정보·광고 수신 동의',0,'타겟광고를 위한 선택 동의','Admin','Admin');
+INSERT INTO TB_MEMBER_TERMS_CATEGORY (PARENT_CATEGORY_ID, SERVICE_CODE, ORDER_NO, CATEGORY_TITLE, IS_REQUIRED, MEMO, CREATED_BY, UPDATED_BY) values (0,'IXIO',7,'서비스 품질 향상을 위한 개인정보 수집 및 이용 동의',0,'AI모델 학습을 위한 정보수집동의','Admin','Admin');
+
+-- 약관
+INSERT INTO TB_MEMBER_TERMS (SERVICE_CODE, OS_TYPE, CATEGORY_ID, IS_ACTIVE, AGE_TYPE, ACTIVE_AT, CREATED_AT, UPDATED_AT, TERMS_VERSION, TITLE, CONTENT_URL, CREATED_BY, UPDATED_BY) VALUES ('IXIO', 1, 1, 1, 'AGE0', '2024-11-01 00:00:00', '2025-05-27 17:17:45', '2025-05-27 17:17:47', '1.1', '서비스 이용약관', 'https://storages.aicall-lgudev.com/content/1726846132193-term1_old.html', 'admin', 'admin');
+INSERT INTO TB_MEMBER_TERMS (SERVICE_CODE, OS_TYPE, CATEGORY_ID, IS_ACTIVE, AGE_TYPE, ACTIVE_AT, CREATED_AT, UPDATED_AT, TERMS_VERSION, TITLE, CONTENT_URL, CREATED_BY, UPDATED_BY) VALUES ( 'IXIO', 1, 1, 1, 'AGE0', '2024-09-28 00:00:00', '2025-05-27 17:17:45', '2025-05-27 17:17:47', '1.0', '서비스 이용약관', 'https://storages.aicall-lgudev.com/content/1726846132193-term1_old.html', 'admin', 'admin');
+INSERT INTO TB_MEMBER_TERMS (SERVICE_CODE, OS_TYPE, CATEGORY_ID, IS_ACTIVE, AGE_TYPE, ACTIVE_AT, CREATED_AT, UPDATED_AT, TERMS_VERSION, TITLE, CONTENT_URL, CREATED_BY, UPDATED_BY) VALUES ( 'IXIO', 2, 1, 1, 'AGE0', '2025-03-03 00:00:00', '2025-05-27 17:17:45', '2025-05-27 17:17:47', '1.0', '서비스 이용약관', 'https://storages.aicall-lgudev.com/content/1726846132193-term1_old.html', 'admin', 'admin');
+INSERT INTO TB_MEMBER_TERMS (SERVICE_CODE, OS_TYPE, CATEGORY_ID, IS_ACTIVE, AGE_TYPE, ACTIVE_AT, CREATED_AT, UPDATED_AT, TERMS_VERSION, TITLE, CONTENT_URL, CREATED_BY, UPDATED_BY) VALUES ( 'IXIO', 1, 2, 1, 'AGE0', '2024-11-01 00:00:00', '2025-05-27 17:17:45', '2025-05-27 17:17:47', '1.0', '개인정보 수집·이용 동의', 'https://storages.aicall-lgudev.com/content/1726846132193-term1_old.html', 'admin', 'admin');
+INSERT INTO TB_MEMBER_TERMS (SERVICE_CODE, OS_TYPE, CATEGORY_ID, IS_ACTIVE, AGE_TYPE, ACTIVE_AT, CREATED_AT, UPDATED_AT, TERMS_VERSION, TITLE, CONTENT_URL, CREATED_BY, UPDATED_BY) VALUES ( 'IXIO', 1, 2, 1, 'AGE0', '2025-02-27 00:00:00', '2025-05-27 17:17:45', '2025-05-27 17:17:47', '1.1', '개인정보 수집·이용 동의', 'https://storages.aicall-lgudev.com/content/1726846132193-term1_old.html', 'admin', 'admin');
+INSERT INTO TB_MEMBER_TERMS (SERVICE_CODE, OS_TYPE, CATEGORY_ID, IS_ACTIVE, AGE_TYPE, ACTIVE_AT, CREATED_AT, UPDATED_AT, TERMS_VERSION, TITLE, CONTENT_URL, CREATED_BY, UPDATED_BY) VALUES ( 'IXIO', 2, 2, 1, 'AGE0', '2025-03-03 00:00:00', '2025-05-27 17:17:45', '2025-05-27 17:17:47', '1.0', '개인정보 수집·이용 동의', 'https://storages.aicall-lgudev.com/content/1726846132193-term1_old.html', 'admin', 'admin');
+INSERT INTO TB_MEMBER_TERMS (SERVICE_CODE, OS_TYPE, CATEGORY_ID, IS_ACTIVE, AGE_TYPE, ACTIVE_AT, CREATED_AT, UPDATED_AT, TERMS_VERSION, TITLE, CONTENT_URL, CREATED_BY, UPDATED_BY) VALUES ( 'IXIO', 1, 3, 1, 'AGE0', '2024-11-01 00:00:00', '2025-05-27 17:17:45', '2025-05-27 17:17:47', '1.0', '개인정보 제3자 제공 동의', 'https://storaged.aicall-lgudev.com/content/1736766207705-[íì]ê°ì¸ì ë³´ ì 3ì ì ê³µ ëì_ìµìì¤A_1217.html', 'admin', 'admin');
+INSERT INTO TB_MEMBER_TERMS (SERVICE_CODE, OS_TYPE, CATEGORY_ID, IS_ACTIVE, AGE_TYPE, ACTIVE_AT, CREATED_AT, UPDATED_AT, TERMS_VERSION, TITLE, CONTENT_URL, CREATED_BY, UPDATED_BY) VALUES ( 'IXIO', 2, 3, 1, 'AGE0', '2025-03-03 00:00:00', '2025-05-27 17:17:45', '2025-05-27 17:17:47', '1.0', '개인정보 제3자 제공 동의', 'https://storaged.aicall-lgudev.com/content/1736766207705-[íì]ê°ì¸ì ë³´ ì 3ì ì ê³µ ëì_ìµìì¤A_1217.html', 'admin', 'admin');
+INSERT INTO TB_MEMBER_TERMS (SERVICE_CODE, OS_TYPE, CATEGORY_ID, IS_ACTIVE, AGE_TYPE, ACTIVE_AT, CREATED_AT, UPDATED_AT, TERMS_VERSION, TITLE, CONTENT_URL, CREATED_BY, UPDATED_BY) VALUES ( 'IXIO', 1, 5, 1, 'AGE2', '2024-11-01 00:00:00', '2025-05-27 17:17:45', '2025-05-27 17:17:47', '1.0', '고객 혜택 제공을 위한 정보 수집·이용 동의', 'https://storages.aicall-lgudev.com/content/1726846132193-term1_old.html', 'admin', 'admin');
+INSERT INTO TB_MEMBER_TERMS (SERVICE_CODE, OS_TYPE, CATEGORY_ID, IS_ACTIVE, AGE_TYPE, ACTIVE_AT, CREATED_AT, UPDATED_AT, TERMS_VERSION, TITLE, CONTENT_URL, CREATED_BY, UPDATED_BY) VALUES ('IXIO', 2, 5, 1, 'AGE2', '2025-03-03 00:00:00', '2025-05-27 17:17:45', '2025-05-27 17:17:47', '1.0', '고객 혜택 제공을 위한 정보 수집·이용 동의', 'https://storages.aicall-lgudev.com/content/1726846132193-term1_old.html', 'admin', 'admin');
+INSERT INTO TB_MEMBER_TERMS (SERVICE_CODE, OS_TYPE, CATEGORY_ID, IS_ACTIVE, AGE_TYPE, ACTIVE_AT, CREATED_AT, UPDATED_AT, TERMS_VERSION, TITLE, CONTENT_URL, CREATED_BY, UPDATED_BY) VALUES ('IXIO', 1, 6, 1, 'AGE2', '2024-11-01 00:00:00', '2025-05-27 17:33:43', '2025-05-27 17:33:42', '1.0', '혜택 정보·광고 수신 동의', 'https://storages.aicall-lgudev.com/content/1726846132193-term1_old.html', 'admin', 'admin');
+INSERT INTO TB_MEMBER_TERMS (SERVICE_CODE, OS_TYPE, CATEGORY_ID, IS_ACTIVE, AGE_TYPE, ACTIVE_AT, CREATED_AT, UPDATED_AT, TERMS_VERSION, TITLE, CONTENT_URL, CREATED_BY, UPDATED_BY) VALUES ('IXIO', 2, 6, 1, 'AGE2', '2025-03-03 00:00:00', '2025-05-27 17:33:43', '2025-05-27 17:33:42', '1.0', '혜택 정보·광고 수신 동의', 'https://storages.aicall-lgudev.com/content/1726846132193-term1_old.html', 'admin', 'admin');
+
+INSERT INTO TB_MEMBER_TERMS (SERVICE_CODE, OS_TYPE, CATEGORY_ID, IS_ACTIVE, AGE_TYPE, ACTIVE_AT, CREATED_AT, UPDATED_AT, TERMS_VERSION, TITLE, CONTENT_URL, CREATED_BY, UPDATED_BY) VALUES ('IXIO', 1, 4, 1, 'AGE0', '2025-06-23 00:00:00', now(), now(), '1.0', '위치기반서비스 이용약관', 'https://storage.aicall-lgudev.com/content/1750642510073-location.html', 'admin', 'admin');
+INSERT INTO TB_MEMBER_TERMS (SERVICE_CODE, OS_TYPE, CATEGORY_ID, IS_ACTIVE, AGE_TYPE, ACTIVE_AT, CREATED_AT, UPDATED_AT, TERMS_VERSION, TITLE, CONTENT_URL, CREATED_BY, UPDATED_BY) VALUES ('IXIO', 2, 4, 1, 'AGE0', '2025-06-23 00:00:00', now(), now(), '1.0', '위치기반서비스 이용약관', 'https://storage.aicall-lgudev.com/content/1750642369456-location.html', 'admin', 'admin');
+INSERT INTO TB_MEMBER_TERMS (SERVICE_CODE, OS_TYPE, CATEGORY_ID, IS_ACTIVE, AGE_TYPE, ACTIVE_AT, CREATED_AT, UPDATED_AT, TERMS_VERSION, TITLE, CONTENT_URL, CREATED_BY, UPDATED_BY) VALUES ('IXIO', 1, 7, 1, 'AGE0', '2025-06-23 00:00:00', now(), now(), '1.0', '서비스 품질 향상을 위한 개인정보 수집 및 이용 동의', 'https://storage.aicall-lgudev.com/content/1750642510416-quality.html', 'admin', 'admin');
+INSERT INTO TB_MEMBER_TERMS (SERVICE_CODE, OS_TYPE, CATEGORY_ID, IS_ACTIVE, AGE_TYPE, ACTIVE_AT, CREATED_AT, UPDATED_AT, TERMS_VERSION, TITLE, CONTENT_URL, CREATED_BY, UPDATED_BY) VALUES ('IXIO', 2, 7, 1, 'AGE0', '2025-06-23 00:00:00', now(), now(), '1.0', '서비스 품질 향상을 위한 개인정보 수집 및 이용 동의', 'https://storage.aicall-lgudev.com/content/1750642369904-quality.html', 'admin', 'admin');
+
+
+INSERT INTO TB_SET_TERMS (TITLE, CONTENT_URL, TERMS_CATEGORY, TERMS_TYPE, TERMS_VERSION, IS_REQUIRED, IS_ACTIVE, ACTIVE_DATE, CREATED_AT, UPDATED_AT, OS_TYPE) VALUES ( '서비스 이용약관', 'https://storages.aicall-lgudev.com/content/1726846132193-term1_old.html', 1, 1, '2024년 11월 1일', true, true, '2024-11-01 00:00:00', '2025-06-24 10:25:39', '2025-06-24 10:25:42', 1);
+INSERT INTO TB_SET_TERMS (TITLE, CONTENT_URL, TERMS_CATEGORY, TERMS_TYPE, TERMS_VERSION, IS_REQUIRED, IS_ACTIVE, ACTIVE_DATE, CREATED_AT, UPDATED_AT, OS_TYPE) VALUES ( '서비스 이용약관', 'https://storages.aicall-lgudev.com/content/1726846132193-term1.html', 1, 1, '2024년 9월 28일', true, false, '2024-09-28 00:00:00', '2025-06-24 10:25:39', '2025-06-24 10:25:42', 1);
+INSERT INTO TB_SET_TERMS (TITLE, CONTENT_URL, TERMS_CATEGORY, TERMS_TYPE, TERMS_VERSION, IS_REQUIRED, IS_ACTIVE, ACTIVE_DATE, CREATED_AT, UPDATED_AT, OS_TYPE) VALUES ( '개인정보 수집·이용 동의', 'https://storages.aicall-lgudev.com/content/1726846132193-term1.html', 2, 1, '2024년 11월 1일', true, false, '2024-11-01 00:00:00', '2025-06-24 10:25:39', '2025-06-24 10:25:42', 1);
+INSERT INTO TB_SET_TERMS (TITLE, CONTENT_URL, TERMS_CATEGORY, TERMS_TYPE, TERMS_VERSION, IS_REQUIRED, IS_ACTIVE, ACTIVE_DATE, CREATED_AT, UPDATED_AT, OS_TYPE) VALUES ( '개인정보 수집·이용 동의', 'https://storages.aicall-lgudev.com/content/1726846132193-term1.html', 2, 1, '2025년 2월 27일', true, true, '2025-02-27 00:00:00', '2025-06-24 10:25:39', '2025-06-24 10:25:42', 1);
+INSERT INTO TB_SET_TERMS (TITLE, CONTENT_URL, TERMS_CATEGORY, TERMS_TYPE, TERMS_VERSION, IS_REQUIRED, IS_ACTIVE, ACTIVE_DATE, CREATED_AT, UPDATED_AT, OS_TYPE) VALUES ( '개인정보 제3자 제공 동의', 'https://storages.aicall-lgudev.com/content/1726846132193-term1.html', 3, 1, '2024년 11월 1일', true, true, '2024-11-01 00:00:00', '2025-06-24 10:25:39', '2025-06-24 10:25:42', 1);
+INSERT INTO TB_SET_TERMS (TITLE, CONTENT_URL, TERMS_CATEGORY, TERMS_TYPE, TERMS_VERSION, IS_REQUIRED, IS_ACTIVE, ACTIVE_DATE, CREATED_AT, UPDATED_AT, OS_TYPE) VALUES ( '고객 혜택 제공을 위한 정보 수집·이용 동의', 'https://storages.aicall-lgudev.com/content/1726846132193-term1.html', 5, 3, '2024년 11월 1일', false, true, '2024-11-01 00:00:00', '2025-06-24 10:25:39', '2025-06-24 10:25:42', 1);
+INSERT INTO TB_SET_TERMS (TITLE, CONTENT_URL, TERMS_CATEGORY, TERMS_TYPE, TERMS_VERSION, IS_REQUIRED, IS_ACTIVE, ACTIVE_DATE, CREATED_AT, UPDATED_AT, OS_TYPE) VALUES ( '서비스 품질 향상을 위한 개인정보 수집·이용 동의', 'https://storages.aicall-lgudev.com/content/1726846132193-term1.html', 4, 2, '2025년 5월 27일', false, true, '2025-05-27 00:00:00', '2025-06-24 10:25:39', '2025-06-24 10:25:42', 1);
+INSERT INTO TB_SET_TERMS (TITLE, CONTENT_URL, TERMS_CATEGORY, TERMS_TYPE, TERMS_VERSION, IS_REQUIRED, IS_ACTIVE, ACTIVE_DATE, CREATED_AT, UPDATED_AT, OS_TYPE) VALUES ( '혜택 정보·광고 수신 동의', 'https://storages.aicall-lgudev.com/content/1726846132193-term1.html', 6, 4, '2024년 11월 1일', false, true, '2024-11-01 00:00:00', '2025-06-24 10:25:39', '2025-06-24 10:25:42', 1);
+INSERT INTO TB_SET_TERMS ( TITLE, CONTENT_URL, TERMS_CATEGORY, TERMS_TYPE, TERMS_VERSION, IS_REQUIRED, IS_ACTIVE, ACTIVE_DATE, CREATED_AT, UPDATED_AT, OS_TYPE) VALUES ( '서비스 이용약관', 'https://storages.aicall-lgudev.com/content/1726846132193-term1.html', 1, 1, '2025년 3월 3일', true, true, '2025-03-03 00:00:00', '2025-06-24 10:25:39', '2025-06-24 10:25:42', 2);
+INSERT INTO TB_SET_TERMS ( TITLE, CONTENT_URL, TERMS_CATEGORY, TERMS_TYPE, TERMS_VERSION, IS_REQUIRED, IS_ACTIVE, ACTIVE_DATE, CREATED_AT, UPDATED_AT, OS_TYPE) VALUES ( '개인정보 수집·이용 동의', 'https://storages.aicall-lgudev.com/content/1726846132193-term1.html', 2, 1, '2025년 3월 3일', true, true, '2025-03-03 00:00:00', '2025-06-24 10:25:39', '2025-06-24 10:25:42', 2);
+INSERT INTO TB_SET_TERMS ( TITLE, CONTENT_URL, TERMS_CATEGORY, TERMS_TYPE, TERMS_VERSION, IS_REQUIRED, IS_ACTIVE, ACTIVE_DATE, CREATED_AT, UPDATED_AT, OS_TYPE) VALUES ( '개인정보 제3자 제공 동의', 'https://storages.aicall-lgudev.com/content/1726846132193-term1.html', 3, 1, '2025년 3월 3일', true, true, '2025-03-03 00:00:00', '2025-06-24 10:25:39', '2025-06-24 10:25:42', 2);
+INSERT INTO TB_SET_TERMS ( TITLE, CONTENT_URL, TERMS_CATEGORY, TERMS_TYPE, TERMS_VERSION, IS_REQUIRED, IS_ACTIVE, ACTIVE_DATE, CREATED_AT, UPDATED_AT, OS_TYPE) VALUES ( '고객 혜택 제공을 위한 정보 수집·이용 동의', 'https://storages.aicall-lgudev.com/content/1726846132193-term1.html', 5, 3, '2025년 3월 3일', false, true, '2025-03-03 00:00:00', '2025-06-24 10:25:39', '2025-06-24 10:25:42', 2);
+INSERT INTO TB_SET_TERMS ( TITLE, CONTENT_URL, TERMS_CATEGORY, TERMS_TYPE, TERMS_VERSION, IS_REQUIRED, IS_ACTIVE, ACTIVE_DATE, CREATED_AT, UPDATED_AT, OS_TYPE) VALUES ( '혜택 정보·광고 수신 동의', 'https://storages.aicall-lgudev.com/content/1726846132193-term1.html', 6, 4, '2025년 3월 3일', false, true, '2025-03-03 00:00:00', '2025-06-24 10:25:39', '2025-06-24 10:25:42', 2);
+
+
+-- tester
+INSERT INTO TB_USER (USER_ID, ENTR_ID, NAME, EMAIL, CTN, BIRTHDATE, GENDER, VERSION_NUMBER, MODEL_NAME, OS_NAME, DEVICE_TOKEN, ACCESS_TOKEN, IS_MVOIP, SIGNUP_DATE, LAST_CALL_TIME, OS_TYPE) VALUES ('2ff80f10-fff0-4335-ac28-66b5b23adb13', 'NTAwMjcwOTcyMDIx', '김윤지', 'src6161990@i-nara.co.kr', '01054046199', '1995-02-21 00:00:00', 'UNKNOWN', '2.0.0', 'Galaxy S24', '14.0', 'DEVICE_TOKEN', 'eyJraWQiOiIyNGE5ZDlhMS0wNzBlLTQ4YTMtODVkYS1mODVkNjNjMDY1NGQiLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiI4YjRlYzI5Mi03YjlhLTQ0MmItOWUzNi1hOTczOGZlNTRmZTQiLCJhdWQiOiJzdEpLNzMyQlVLTzFVSFFQdXVIaldSNENWRU1Lb2lkcCIsIm5iZiI6MTc1MDc3MDgwOSwic2NvcGUiOlsidXNlcl90eXBlIiwicGhvbmUiLCJvcGVuaWQiLCJwcm9maWxlIiwiZW1haWwiLCJ1cGx1cy5pZCJdLCJpc3MiOiJodHRwczovL2dyb290LWd3LmFjY291bnRkLmxndXBsdXNkZXYuY29tIiwiZXhwIjoxNzUwODU3MjA5LCJpYXQiOjE3NTA3NzA4MDl9.ZKksB89QDaUVlg3wdUaJK_fZNGUFlvTirzaKR6IwgKk4KWPL1wrLjPiUmFkpzd8Zq-h10VwgtFiZrmLl6zECQD44MazNxX64FHd87QQQ-lUpsN5WeUw5yMjt2WvzKg3aLZ_twTKMCcNmFJjI1r4KSo8tGeAlcB8R8aEfszn1mNwTpncSV0qWMm2DmHkM6KuYLvBCV86v82XqNstKnr6Py9DCVjdGi-P7KcQtDjBPXmy2VwTp8-mopqeddKD2w1Vtu7nO1vNNoSv3IPl9jlCSSTlNQOE7yoCcVm4LOsMrS5teAIumoSMZmfKTyA1hLdTzt4lAK8A95QTUgLuL3UzBXQ', 1, '2025-04-04 15:22:50', '1970-01-01 00:00:01', 1);
+INSERT INTO TB_USER (USER_ID, ENTR_ID, NAME, EMAIL, CTN, BIRTHDATE, GENDER, VERSION_NUMBER, MODEL_NAME, OS_NAME, DEVICE_TOKEN, ACCESS_TOKEN, IS_MVOIP, SIGNUP_DATE, LAST_CALL_TIME, OS_TYPE) VALUES ('49f8f711-e06f-49be-a414-a495b29201b7', 'NTAwMjcwOTcyMDIx', '장원익', 'jangwonik@i-nara.co.kr', '01025372680', '1995-02-21 00:00:00', 'UNKNOWN', '2.0.0', 'Galaxy S24', '14.0', 'DEVICE_TOKEN', 'eyJraWQiOiIyNGE5ZDlhMS0wNzBlLTQ4YTMtODVkYS1mODVkNjNjMDY1NGQiLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiI4YjRlYzI5Mi03YjlhLTQ0MmItOWUzNi1hOTczOGZlNTRmZTQiLCJhdWQiOiJzdEpLNzMyQlVLTzFVSFFQdXVIaldSNENWRU1Lb2lkcCIsIm5iZiI6MTc1MDc3MDgwOSwic2NvcGUiOlsidXNlcl90eXBlIiwicGhvbmUiLCJvcGVuaWQiLCJwcm9maWxlIiwiZW1haWwiLCJ1cGx1cy5pZCJdLCJpc3MiOiJodHRwczovL2dyb290LWd3LmFjY291bnRkLmxndXBsdXNkZXYuY29tIiwiZXhwIjoxNzUwODU3MjA5LCJpYXQiOjE3NTA3NzA4MDl9.ZKksB89QDaUVlg3wdUaJK_fZNGUFlvTirzaKR6IwgKk4KWPL1wrLjPiUmFkpzd8Zq-h10VwgtFiZrmLl6zECQD44MazNxX64FHd87QQQ-lUpsN5WeUw5yMjt2WvzKg3aLZ_twTKMCcNmFJjI1r4KSo8tGeAlcB8R8aEfszn1mNwTpncSV0qWMm2DmHkM6KuYLvBCV86v82XqNstKnr6Py9DCVjdGi-P7KcQtDjBPXmy2VwTp8-mopqeddKD2w1Vtu7nO1vNNoSv3IPl9jlCSSTlNQOE7yoCcVm4LOsMrS5teAIumoSMZmfKTyA1hLdTzt4lAK8A95QTUgLuL3UzBXQ', 1, '2025-04-04 15:22:50', '1970-01-01 00:00:01', 1);
+INSERT INTO TB_USER_PROD_CD (USER_ID, PROD_CD, IS_JOINED, AGREED_DATE, DISAGREED_DATE) VALUES ('2ff80f10-fff0-4335-ac28-66b5b23adb13', 'LRZ1002380', 1, '2025-06-25 14:50:01', '1970-01-01 09:00:01');
+
+-- 탈퇴 처리 테스트용 데이터 (USER_ID: 2ff80f10-fff0-4335-ac28-66b5b23adb13)
+
+-- TB_AI_SEARCH_RESULT
+INSERT INTO TB_AI_SEARCH_RESULT (CALL_ID, CALL_START_TIME, CALL_END_TIME, USER_ID, CONTENTS, REQUESTED_AT, CREATED_AT)
+VALUES
+    ('CALL_001_8b4ec292', '2025-05-20 10:30:00', '2025-05-20 10:32:00', '2ff80f10-fff0-4335-ac28-66b5b23adb13', '{"search_keywords": ["영화 추천", "CGV 상영시간"], "results": [{"title": "최신 영화 정보", "url": "https://example.com/movies"}]}', '2025-05-20 10:35:00', '2025-05-20 10:35:00'),
+    ('CALL_002_8b4ec292', '2025-05-20 14:20:00', '2025-05-20 14:25:00', '2ff80f10-fff0-4335-ac28-66b5b23adb13', '{"search_keywords": ["프로젝트 관리 도구", "업무 효율성"], "results": [{"title": "업무 도구 추천", "url": "https://example.com/tools"}]}', '2025-05-20 14:30:00', '2025-05-20 14:30:00');
+
+-- TB_LAB_TERMS (먼저 약관 데이터 추가)
+INSERT INTO TB_LAB_TERMS (LAB_TYPE, TERMS_TYPE, IS_REQUIRED, IS_ACTIVE, ACTIVE_AT, CREATED_AT, UPDATED_AT, LAB_TERMS_VERSION, TITLE, CONTENT_URL, CREATED_BY, UPDATED_BY)
+VALUES
+    (1, 1, 1, 1, '2025-04-01 00:00:00', '2025-04-01 00:00:00', '2025-04-01 00:00:00', '1.0', '실험실 서비스 이용약관', 'https://example.com/lab-terms-1', 'admin', 'admin'),
+    (2, 1, 1, 1, '2025-04-01 00:00:00', '2025-04-01 00:00:00', '2025-04-01 00:00:00', '1.0', '실험실 개인정보 수집약관', 'https://example.com/lab-terms-2', 'admin', 'admin');
+
+-- TB_LAB_TERMS_AGREEMENT
+INSERT INTO TB_LAB_TERMS_AGREEMENT (LAB_TERMS_ID, USER_ID, IS_AGREED, CREATED_AT, AGREED_AT)
+VALUES
+    (1, '2ff80f10-fff0-4335-ac28-66b5b23adb13', 1, '2025-04-04 15:25:00', '2025-04-04 15:25:00'),
+    (2, '2ff80f10-fff0-4335-ac28-66b5b23adb13', 1, '2025-04-04 15:25:00', '2025-04-04 15:25:00');
+
+-- TB_LAB_USAGE
+INSERT INTO TB_LAB_USAGE (LAB_TYPE, IS_USED, CREATED_AT, UPDATED_AT, USER_ID)
+VALUES
+    (1, 1, '2025-04-04 15:30:00', '2025-07-01 10:00:00', '2ff80f10-fff0-4335-ac28-66b5b23adb13'),
+    (2, 1, '2025-04-04 15:30:00', '2025-07-01 12:00:00', '2ff80f10-fff0-4335-ac28-66b5b23adb13'),
+    (3, 0, '2025-04-04 15:30:00', '2025-06-15 09:00:00', '2ff80f10-fff0-4335-ac28-66b5b23adb13');
+
+-- TB_MEMBER_TERMS_AGREEMENT
+INSERT INTO TB_MEMBER_TERMS_AGREEMENT (MEMBER_TERMS_ID, SERVICE_CODE, OS_TYPE, CATEGORY_ID, TERMS_VERSION, USER_ID, IS_AGREED, CREATED_AT, AGREED_AT)
+VALUES
+    (1, 'IXIO', 1, 1, '1.1', '2ff80f10-fff0-4335-ac28-66b5b23adb13', 1, '2025-04-04 15:22:50', '2025-04-04 15:22:50'),
+    (4, 'IXIO', 1, 2, '1.0', '2ff80f10-fff0-4335-ac28-66b5b23adb13', 1, '2025-04-04 15:22:50', '2025-04-04 15:22:50'),
+    (7, 'IXIO', 1, 3, '1.0', '2ff80f10-fff0-4335-ac28-66b5b23adb13', 1, '2025-04-04 15:22:50', '2025-04-04 15:22:50'),
+    (10, 'IXIO', 1, 5, '1.0', '2ff80f10-fff0-4335-ac28-66b5b23adb13', 1, '2025-04-04 15:22:50', '2025-04-04 15:22:50'),
+    (12, 'IXIO', 1, 6, '1.0', '2ff80f10-fff0-4335-ac28-66b5b23adb13', 0, '2025-04-04 15:22:50', '2025-04-04 15:22:50');
+
+-- TB_MEMBER_TERMS_AGREEMENT_HISTORY
+INSERT INTO TB_MEMBER_TERMS_AGREEMENT_HISTORY (MEMBER_TERMS_ID, SERVICE_CODE, OS_TYPE, CATEGORY_ID, TERMS_VERSION, USER_ID, IS_AGREED, CREATED_AT, AGREED_AT)
+VALUES
+    (1, 'IXIO', 1, 1, '1.1', '2ff80f10-fff0-4335-ac28-66b5b23adb13', 1, '2025-04-04 15:22:50', '2025-04-04 15:22:50'),
+    (2, 'IXIO', 1, 1, '1.0', '2ff80f10-fff0-4335-ac28-66b5b23adb13', 1, '2025-04-04 15:22:50', '2025-04-04 15:22:50'),
+    (4, 'IXIO', 1, 2, '1.0', '2ff80f10-fff0-4335-ac28-66b5b23adb13', 1, '2025-04-04 15:22:50', '2025-04-04 15:22:50'),
+    (5, 'IXIO', 1, 2, '1.1', '2ff80f10-fff0-4335-ac28-66b5b23adb13', 1, '2025-05-15 10:30:00', '2025-05-15 10:30:00'),
+    (7, 'IXIO', 1, 3, '1.0', '2ff80f10-fff0-4335-ac28-66b5b23adb13', 1, '2025-04-04 15:22:50', '2025-04-04 15:22:50'),
+    (10, 'IXIO', 1, 5, '1.0', '2ff80f10-fff0-4335-ac28-66b5b23adb13', 1, '2025-04-04 15:22:50', '2025-04-04 15:22:50'),
+    (12, 'IXIO', 1, 6, '1.0', '2ff80f10-fff0-4335-ac28-66b5b23adb13', 0, '2025-04-04 15:22:50', '2025-04-04 15:22:50');
+
+-- TB_USER_PUSH
+INSERT INTO TB_USER_PUSH (USER_ID, PUSH_TYPE, IS_AGREED, AGREED_DATE)
+VALUES
+    ('2ff80f10-fff0-4335-ac28-66b5b23adb13', 'NOTICE', 1, '2025-04-04 15:22:50'),
+    ('2ff80f10-fff0-4335-ac28-66b5b23adb13', 'SUMMARY', 1, '2025-04-04 15:22:50'),
+    ('2ff80f10-fff0-4335-ac28-66b5b23adb13', 'PROMOTION', 0, '1970-01-01 09:00:01');
+
+-- TB_SET_STATUS 업데이트용 현재 데이터
+INSERT INTO TB_SET_STATUS (RECORD_DATE, SIGNUP_COUNT, SERVICE_JOIN_COUNT, SERVICE_WITHDRAW_COUNT, LEAVE_COUNT)
+VALUES
+    ('2025-07-01', 5, 3, 1, 0),
+    ('2025-07-02', 8, 5, 2, 1)
+ON DUPLICATE KEY UPDATE
+    SIGNUP_COUNT = VALUES(SIGNUP_COUNT),
+    SERVICE_JOIN_COUNT = VALUES(SERVICE_JOIN_COUNT),
+    SERVICE_WITHDRAW_COUNT = VALUES(SERVICE_WITHDRAW_COUNT),
+    LEAVE_COUNT = VALUES(LEAVE_COUNT);
+
+-- TB_SET_EVENT
+INSERT INTO TB_SET_EVENT
+(TITLE, BOTTOM_CONTENT, EVENT_END, EVENT_TYPE, IMAGE_URL, SUMMARY_CONTENT, SUMMARY_IMAGE_URL,
+ IS_BUTTON, BUTTON_NAME, APP_LINK, IS_ACTIVE, START_TIME, END_TIME, ACTIVE_DATE, CREATED_AT, UPDATED_AT, OS_TYPE)
+VALUES
+-- 1번째 ROW (ALL)
+('우리집 지켜주는 홈캠 무료로 이용하기 ALL',
+ '', '이벤트가 종료되었어요.', 'DIRECT', '',
+ '25.07.21(금) ~ 25.09.13(일)',
+ 'https://storage.aicall-lgu.com/summaryImage/1742797734177-ıæŝį,į_ę=įŝį_jųįlįit_v2İİ.png',
+ 0, '', '/browser?url=https://lgudcb.com/homecamevent', 1,
+ '2024-07-21 16:00:00', '2025-04-13 23:59:00',
+ '2025-03-24 15:28:54', '2025-03-21 16:10:41', '2025-03-24 15:28:54', 0),
+
+-- 2번째 ROW (iOS) 활성화
+('구독권 증정 이용하기 IOS',
+ '', '이벤트가 종료되었어요.', 'DIRECT', '',
+ '25.03.21(금) ~ 25.04.13(일)',
+ 'https://storage.aicall-lgu.com/summaryImage/1742797764814-ıæŝį,į_ę=įŝį_jųįlįit_v2İİ.png',
+ 1, '', '/browser?url=https://lgudcb.com/homecamevent', 1,
+ '2025-05-21 16:18:00', '2027-07-13 23:59:00',
+ '2025-03-24 15:29:24', '2025-03-24 15:29:24', '2025-03-24 15:29:24', 1),
+
+-- 3번째 ROW (AOS)
+('우리집 지켜주는 홈캠 무료로 이용하기 AOS',
+ '', '이벤트가 종료되었어요.', 'DIRECT', '',
+ '25.07.21(금) ~ 25.09.13(일)',
+ 'https://storage.aicall-lgu.com/summaryImage/1742797734177-ıæŝį,į_ę=įŝį_jųįlįit_v2İİ.png',
+ 0, '', '/browser?url=https://lgudcb.com/homecamevent', 1,
+ '2024-07-21 16:00:00', '2025-04-13 23:59:00',
+ '2025-03-24 15:28:54', '2025-03-21 16:10:41', '2025-03-24 15:28:54', 2);
+
+
+INSERT INTO SampleSchema.TB_MEMBER_REMINDER (USER_ID, REMINDER_TYPE, REGISTRATION_TYPE, TITLE, ENCRYPT_COUPON_CODE,
+                                         CALL_LOG_ID, IS_ALL_DAY, IS_USED, IS_DELETED, MEMO, EXPIRED_AT, UPDATED_AT,
+                                         CREATED_AT, DELETED_BY, COUPON_ICON_CATEGORY, COUPON_TYPE)
+VALUES ('7f5aae14-f171-49b9-8735-a5a52c6a0d65', 1, 1, '쿠폰 자동', 'encryptCouponCode5', 'msg-01', 0, 0, 0, '',
+        '2025-08-13 07:59:59', '2025-08-11 04:03:45', '2025-08-11 04:03:45', null, 'pizza', 1);
+
+
+
+-- TB_SMART_SUMMARY 삭제 데이터 데이터
+INSERT INTO TB_SMART_SUMMARY (SMART_SUMMARY_ID, CALL_ID, FORM_TYPE, TITLE, KEYWORD, CONTENTS, OPTIONS, STATUS, USER_ID, REQUEST_AT, MODIFY_AT, SUMMARY_AT)
+VALUES
+('0198cfee-99fb-7000-9a33-89f19ff7eb62',
+ 'e9ec9266-55db-4eff-9e0d-aa584a74d321_1755827780933_volte',
+ 'normal',
+ '암호화된 title',
+ '암호화된 키워드',
+ '암호화된 스마트요약 내용',
+ '부가 정보',
+ 1,
+ '44cf93b8-9d26-45f6-976f-f74c95f0a31f',
+ now(),
+ now(),
+ now()
+),
+('0198cfee-99fb-7000-9a33-89f19ff7eb63',
+ 'e9ec9266-55db-4eff-9e0d-aa584a74d321_1755827780933_volte',
+ 'qAndA',
+ '암호화된 title',
+ '암호화된 키워드',
+ '암호화된 스마트요약 내용',
+ '부가 정보',
+ 1,
+ '44cf93b8-9d26-45f6-976f-f74c95f0a31f',
+ now(),
+ now(),
+ now()
+);
+
+INSERT INTO SampleSchema.TB_AI_CHAT (
+    AI_CHAT_ID,
+    USER_ID,
+    CHAT_ENDED_AT,
+    CHAT_STARTED_AT,
+    CHAT_TITLE,
+    CALL_ID,
+    CHAT_STATUS,
+    LAST_MESSAGE_ID
+) VALUES (
+             1001,
+             'user-12345',
+             '2025-08-25 09:00:00',
+             '2025-08-25 08:30:00',
+             'AI 상담 세션',
+             'random-uuid-call-id',
+             'IN_PROGRESS',
+             NULL
+         );
+
+INSERT INTO SampleSchema.TB_AI_CHAT_MESSAGE (
+    AI_CHAT_MESSAGE_ID,
+    CHAT_ID,
+    ROLE,
+    TEXT_INPUT,
+    CREATED_AT,
+    ANALYSIS_DATE_REF
+) VALUES (
+             1724567890,  -- 예시 unixtime (초 단위)
+             1001,
+             'user',
+             '안녕하세요, AI!',
+             '2025-08-25 08:30:00',
+             '**2025-08-25** ~ **2025-08-25**'
+         );
+
+INSERT INTO SampleSchema.TB_AI_CHAT_MESSAGE (
+    AI_CHAT_MESSAGE_ID,
+    CHAT_ID,
+    ROLE,
+    TEXT_INPUT,
+    CREATED_AT,
+    ANALYSIS_DATE_REF
+) VALUES (
+             1724567895,
+             1001,
+             'model',
+             '안녕하세요! 무엇을 도와드릴까요?',
+             '2025-08-25 08:30:05',
+             '**2025-08-25** ~ **2025-08-25**'
+         );
+
+INSERT INTO SampleSchema.TB_AI_CHAT_MESSAGE (
+    AI_CHAT_MESSAGE_ID,
+    CHAT_ID,
+    ROLE,
+    TEXT_INPUT,
+    CREATED_AT,
+    ANALYSIS_DATE_REF
+) VALUES (
+             1724567900,
+             1001,
+             'user',
+             '오늘 날씨 알려줘',
+             '2025-08-25 08:31:00',
+             '**2025-08-25** ~ **2025-08-25**'
+         );
+
+INSERT INTO SampleSchema.TB_AI_CHAT_MESSAGE (
+    AI_CHAT_MESSAGE_ID,
+    CHAT_ID,
+    ROLE,
+    TEXT_INPUT,
+    CREATED_AT,
+    ANALYSIS_DATE_REF
+) VALUES (
+             1724567905,
+             1001,
+             'model',
+             '서울은 맑고 기온은 28도입니다.',
+             '2025-08-25 08:31:05',
+             '**2025-08-25** ~ **2025-08-25**'
+         );
+INSERT INTO SampleSchema.TB_WAITLIST_DATE_COUNT (WAITLIST_ID, DATE, REMAIN, MAX_REMAIN, UPDATED_AT, CREATED_AT) VALUES ('019a24dd-9060-7d5a-9772-72534a2a63ac', DATE_FORMAT(now(), '%Y%m%d'), 10, 10, now(), now());

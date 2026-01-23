@@ -1,0 +1,22 @@
+{
+  "library": "spring-boot",
+  "documentationProvider": "none",
+  "interfaceOnly": true,
+  "basePackage": "kr.co.uplus.member",
+  "modelPackage": "kr.co.uplus.member.api.model",
+  "apiPackage": "kr.co.uplus.member.api.controller",
+  "useTags": true,
+  "skipDefaultInterface": true,
+  "dateLibrary": "java11",
+  "useBeanValidation": true,
+  "serializableModel": true,
+  "implicitHeaders": false,
+  "swaggerDocketConfig": false,
+  "hideGenerationTimestamp": false,
+
+  "useSpringfox": false,
+  "reactive": false,
+  "openApiNullable": false,
+  "enumPropertyNaming": "original",
+  "useSpringBoot3": true
+}
