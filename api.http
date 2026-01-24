@@ -1,0 +1,14 @@
+### Base URL
+@baseUrl = http://localhost:8080
+
+### Hello API
+GET {{baseUrl}}/api/v1/sample/hello?name=Claude
+
+### Get Sample by ID
+GET {{baseUrl}}/api/v1/sample/1
+
+### Health Check
+GET {{baseUrl}}/actuator/health
+
+### Info
+GET {{baseUrl}}/actuator/info

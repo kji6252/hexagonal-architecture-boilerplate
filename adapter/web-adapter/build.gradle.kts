@@ -15,14 +15,14 @@ dependencies {
   implementation("org.springframework.boot:spring-boot-starter-aop")
   implementation("org.springframework.boot:spring-boot-starter-web")
   implementation("org.springframework.boot:spring-boot-starter-validation")
-  implementation("org.springframework.boot:spring-boot-starter-oauth2-resource-server")
+//  implementation("org.springframework.boot:spring-boot-starter-oauth2-resource-server")
   implementation("org.springframework.boot:spring-boot-starter-data-jpa")
 
   implementation("org.semver4j:semver4j:5.8.0")
 
   // https://mvnrepository.com/artifact/com.giffing.bucket4j.spring.boot.starter/bucket4j-spring-boot-starter
-  implementation("com.giffing.bucket4j.spring.boot.starter:bucket4j-spring-boot-starter:0.12.8")
-  implementation("com.bucket4j:bucket4j-redis:8.10.1")
+//  implementation("com.giffing.bucket4j.spring.boot.starter:bucket4j-spring-boot-starter:0.12.8")
+//  implementation("com.bucket4j:bucket4j-redis:8.10.1")
   implementation("io.opentracing:opentracing-api:0.33.0")
   implementation("io.opentracing:opentracing-util:0.33.0")
 
