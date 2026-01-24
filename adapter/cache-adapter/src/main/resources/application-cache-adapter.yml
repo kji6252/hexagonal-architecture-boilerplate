@@ -5,15 +5,6 @@ spring:
       client-type: jedis
 app:
   cache:
-    names:
-      - samples
-      - 10m
-      - enum-age-types
-      - enum-service-cd
-      - enum-push-type
-      - enum-prod-cd
-      - set-terms
-      - member-terms
     localCaches:
       10m: maximumSize=100000, expireAfterWrite=10m, recordStats
       enum-age-types: maximumSize=6, expireAfterWrite=10m, recordStats
@@ -33,8 +24,8 @@ spring:
   config.activate.on-profile: local
   data:
     redis:
-      host: ${REDIS_NODES_HOST}
-      port: ${REDIS_NODES_PORT}
+      host: ${REDIS_NODES_HOST:localhost}
+      port: ${REDIS_NODES_PORT:6379}
 
 ---
 spring:
