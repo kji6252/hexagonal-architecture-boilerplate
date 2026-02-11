@@ -46,6 +46,8 @@ Spring Boot 기반 헥사고날 아키텍처(Ports & Adapters) 보일러플레�
 
 그 후 `boilerplate-service-api/src/test/kotlin/kr/co/example/service/TestBoilerplateServiceApiApplication.kt`를 실행합니다.
 
+> **참고**: Docker Desktop을 사용 중이고 Testcontainers 연결 오류가 발생할 경우, [이 StackOverflow 답변](https://stackoverflow.com/a/79860621)을 참조하여 해결하세요.
+
 ---
 
 ## 새 프로젝트 생성
